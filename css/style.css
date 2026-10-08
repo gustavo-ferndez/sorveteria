@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*NAVBAR*/
+
+body {
+    background-color: #e9e6ff;
+    font-family: 'Rambla', sans-serif;
+}
+
+.navbar {
+    background-color: #f7f5ff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.logo {
+    text-decoration: none;
+    color: black;
+    font-weight: 100;
+    font-size: 35px;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.list-link {
+    list-style: none;
+}
+
+.link-nav {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+}
+
+.link-nav:hover {
+    color: #4b4aba;
+}
+
+/*FOOTER*/
+
+
+
+/*LOGIN*/
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-login {
+    background-color: #BDB7ff;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    max-height: 100%;
+}
+
+#titulo-login {
+    color:black;
+    font-size: 70px;
+    font-weight: 100;
+    text-align: center;
+    margin: 20px;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.campo-email {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.campo-email label {
+    font-size: 25px;
+    font-family: 'Rambla', sans-serif;
+}
+
+.campo-email input {
+    padding: 15px;
+    border-radius: 6px;
+    border: solid 1px #333;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.campo-email input::placeholder {
+    font-size: 20px;
+    color: #888888;
+    font-style: italic;
+}
+
+
+.campo-senha {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.campo-senha label {
+    font-size: 25px;
+    font-family: 'Rambla', sans-serif;
+}
+
+.campo-senha input {
+    padding: 15px;
+    border-radius: 6px;
+    border: solid 1px #333;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.campo-senha input::placeholder {
+    font-size: 20px;
+    color: #888888;
+    font-style: italic;
+}
+
+.registro-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registro-link a {
+    color: black;
+    font-size: 20px;  
+}
+
+.registro-link a:hover {
+    color: #4b4a8a;
+}
+
+.botao-form {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    padding: 15px 20px;
+    color: white;
+    background-color: #4b4a8a;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 12px;
+    border: none;
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: 100;
+    width: 160px;
+}
+
+.botao-login:hover {
+    background-color: #7b78d6;
+}
+
+/*CADASTRO*/
+
+/*PRODUTO*/
