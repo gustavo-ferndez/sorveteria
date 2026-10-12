@@ -5,10 +5,16 @@
 
 /*NAVBAR*/
 
+
 body {
+    margin: 0;
+    min-height: 100vh;      
+    display: flex;
+    flex-direction: column;
     background-color: #e9e6ff;
-    font-family: 'Rambla', sans-serif;
+    font-family: 'Rambla', sans-serif; 
 }
+
 
 .navbar {
     background-color: #f7f5ff;
@@ -16,7 +22,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 40px;
 }
 
 .logo {
@@ -45,23 +50,78 @@ body {
 /*FOOTER*/
 footer {
     background-color: #f7f5ff;
-    padding: 20px;
+    margin-top: auto; 
+    padding: 30px 60px;
     display: flex;
     justify-content: space-between;
 }
 
+.paginas-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
+.paginas-footer a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+}
+
+.contato-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contato-footer h4 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+/*HOME*/
+.container-home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('../img/sorvete.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+    display: flex;
+    padding: 100px;
+    flex-direction: column;
+    justify-content: end;
+    gap: 100px;
+}
+
+.titulo-home {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 60px;
+    color: #f7f5ff;
+
+}
+
+.btn-home {
+    padding: 20px 25px;
+    color: white;
+    background-color: #BDB7ff;
+    font-weight: bold;
+    font-size: 40px;
+    border-radius: 12px;
+    border: none;
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: 100;
+}
 /*LOGIN*/
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex: 1;
 }
 
 .container-login {
     background-color: #BDB7ff;
     padding: 40px;
-    margin: 20px;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
@@ -85,19 +145,12 @@ footer {
     gap: 20px;
 }
 
-.campo-email {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    width: 100%;
-}
-
-.campo-email label {
+.campo-login label {
     font-size: 20px;
     font-family: 'Rambla', sans-serif;
 }
 
-.campo-email input {
+.campo-login input {
     padding: 10px 15px;
     border-radius: 6px;
     border: solid 1px #333;
@@ -106,35 +159,7 @@ footer {
     font-size: 15px;
 }
 
-.campo-email input::placeholder {
-    font-size: 15px;
-    color: #888888;
-    font-style: italic;
-}
-
-
-.campo-senha {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    width: 100%;
-}
-
-.campo-senha label {
-    font-size: 20px;
-    font-family: 'Rambla', sans-serif;
-}
-
-.campo-senha input {
-    padding: 10px 15px;
-    border-radius: 6px;
-    border: solid 1px #333;
-    width: 100%;
-    box-sizing: border-box;
-    font-size: 15px;
-}
-
-.campo-senha input::placeholder {
+.campo-login input::placeholder {
     font-size: 15px;
     color: #888888;
     font-style: italic;
@@ -177,6 +202,63 @@ footer {
     background-color: #7b78d6;
 }
 
+
 /*CADASTRO*/
+
+.box-cadastro {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    max-width: 900px;   
+    margin: 40px auto;  
+    border-radius: 16px;
+    overflow: hidden;   
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.sorv-cdt {
+    flex: 1;
+    position: relative; 
+    min-width: 0;       
+}
+
+.sorv-cdt img {
+    position: absolute;
+    inset: 0;           
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.container-cadastro {
+    background-color: #BDB7ff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    max-height: 100%;
+}
+
+.campo-cadastro label {
+    font-size: 20px;
+    font-family: 'Rambla', sans-serif;
+}
+
+.campo-cadastro input {
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: solid 1px #333;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.campo-cadastro input::placeholder {
+    font-size: 15px;
+    color: #888888;
+    font-style: italic;
+}
 
 /*PRODUTO*/
